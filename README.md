@@ -1,2 +1,2 @@
 # Recipe-App
-Recipe Application using React.
+Recipe Application using React and Material UI.
