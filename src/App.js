@@ -14,23 +14,23 @@ class App extends Component {
         {
           id: 0,
           title: "Ravioli",
-          instructions: "Stuff raviolis with beef, then close ravioli. Boil for 20 mins then add tomatoes sauce.",
+          instructions: "Stuffed raviolis with beef, then close ravioli. Boil for 20 mins then add tomatoes sauce.",
           ingredients: ["ravioli", 'ground-beef', 'tomatoes sauce', 'cheese'],
-          img: 'https://cdn.pixabay.com/photo/2015/01/17/10/49/ravioli-602087_1280.jpg'
+          img: '../assets/images/ravioli.jpg'
         },
         {
           id: 1,
           title: "Paella",
           instructions: "Cook rice, then add Goya seasoning. After cooking for 20 mins add seafood ingredients.",
           ingredients: ["rice", 'shrimp', 'Goya seasoning', 'mussels', 'squid'],
-          img: 'https://cdn.pixabay.com/photo/2014/07/21/23/04/paella-398968_1280.jpg'
+          img: '../assets/images/paella.jpg'
         },
         {
           id: 2,
           title: "Flan",
           instructions: "Add flan mixture to pot. Then add sugar and condensed milk as well as regular milk. Then add caramel.",
           ingredients: ["Boxed-Flan", 'condensed milk', 'caramel', 'sugar'],
-          img: 'https://cdn.pixabay.com/photo/2014/08/08/11/22/flan-413219_1280.jpg'
+          img: '../assets/images/flan.jpg'
         }
       ],
       nextRecipeId: 3,
