@@ -1,53 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Merienda|Roboto");
 .recipe-card {
-    width: 31%;
-    min-width: 240px;
-    margin: 1%;
-    border: 1px solid rgba(160,160,160,0.3);
-    background: white;
-    border-radius: 0 0 2px 2px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-    0 10px 10px rgba(0, 0, 0, 0.22);
+  width: 31%;
+  min-width: 240px;
+  margin: 1%;
+  border: 1px solid rgba(160, 160, 160, 0.3);
+  background: white;
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .recipe-card-content {
-    padding: 5px;
-    font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+  font-family: "Roboto" cursive sans-serif;
 }
 
 .recipe-card-content button {
-    outline: none;
+  outline: none;
 }
 
 .recipe-card-content button:hover {
-    cursor: pointer;
-    background-color: rgb(80, 76, 76);
-    color: white;
+  cursor: pointer;
+  background-color: rgb(80, 76, 76);
+  color: white;
 }
 
 .recipe-card-image {
-    overflow: hidden;
-    height: 25%;
+  overflow: hidden;
+  height: 25%;
 }
 
 .recipe-card img {
-    width: 100%;
-    max-height: 250px;
+  width: 100%;
+  max-height: 250px;
 }
 
 .recipe-title {
-    margin: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  margin: 0;
+  font-family: "Merienda" cursive sans-serif;
 }
 
 @media (min-width: 1000px) {
-    .recipe-card-image {
-        overflow: hidden;
-        height: 40%;
-    }
+  .recipe-card-image {
+    overflow: hidden;
+    height: 40%;
+  }
 }
 
 @media (min-width: 660px) and (max-width: 950px) {
-    .recipe-card-content{
-        margin-bottom: -70px;
-    }
+  .recipe-card-content {
+    margin-bottom: -70px;
+  }
 }
