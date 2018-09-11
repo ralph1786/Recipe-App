@@ -1,61 +1,75 @@
+/* :root {
+  --primary-color: orange;
+} */
+
 header {
-    background-color: rgb(61, 55, 55);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    padding: 0 13px;
+  background: #f2994a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f2994a,
+    #f2c94c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f2994a,
+    #f2c94c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 13px;
 }
 
 header h2 {
-    text-align: center;
+  text-align: center;
 }
 
 header li {
-    list-style: none;
+  list-style: none;
 }
 
 header a {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-    opacity: 0.8;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 header a:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 header nav {
-    display: flex;
+  display: flex;
 }
 
 header nav li {
-    margin: 0 14px;
+  margin: 0 14px;
 }
 
 header nav li:first-child {
-    margin-left: 0
+  margin-left: 0;
 }
 
 header nav li:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 /* Adding media queries for responsiveness. */
 
 @media (max-width: 1000px) {
-    header {
-        padding: 20px 50px;
-    }
+  header {
+    padding: 20px 50px;
+  }
 }
 
 @media (max-width: 700px) {
-    header h2 {
-        margin-bottom: 15px;
-    }
-    header {
-        flex-direction: column;
-        font-size: .75em;
-    }
+  header h2 {
+    margin-bottom: 15px;
+  }
+  header {
+    flex-direction: column;
+    font-size: 0.75em;
+  }
 }
