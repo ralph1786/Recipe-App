@@ -1,3 +1,4 @@
 # Recipe-App
-Recipe Application using React and Material UI.
-It was also created using create-react-app.
+
+Recipe Application using _React_ and _Material UI_.
+It was bootstrapped using create-react-app.
