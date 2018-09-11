@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Merienda|Roboto");
+:root {
+  --primary-color: #f2994a;
+}
 .recipe-card {
   width: 31%;
   min-width: 240px;
@@ -20,7 +23,7 @@
 
 .recipe-card-content button:hover {
   cursor: pointer;
-  background-color: rgb(80, 76, 76);
+  background-color: var(--primary-color);
   color: white;
 }
 
