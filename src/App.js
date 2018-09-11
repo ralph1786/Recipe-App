@@ -72,11 +72,15 @@ class App extends Component {
           <Navbar onNewRecipe={() => this.setState({ showForm: true })} />
           <Dialog
             title="New Recipe"
+            titleStyle={{ textAlign: "center", color: "#f2c94c" }}
             actions={
               <RecipeInput
-                onSave={this.handleSave}
-                // this closes form when X is clicked.
-                onClose={() => this.setState({ showForm: false })}
+                onSave={this.handleSave} // this closes form when X is clicked.
+                onClose={() =>
+                  this.setState({
+                    showForm: false
+                  })
+                }
               />
             }
             modal={false}
