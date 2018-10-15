@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #f2994a;
-  --secondary-color: #f2c94c;
+  --primary-color: #f77b10;
+  --secondary-color: #f58f29;
 }
 
 .recipe-form {
@@ -50,7 +50,7 @@
   cursor: pointer;
   overflow: hidden;
   font-size: 0.9em;
-  color: #777;
+  color: #e4572e;
   text-shadow: 0 1px 0 #fff;
   align-self: flex-end;
 }

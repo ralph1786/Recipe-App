@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./RecipeInput.css";
 
-export default class RecipeInput extends Component {
+class RecipeInput extends Component {
   static defaultProps = {
     onClose() {},
     onSave() {}
@@ -137,3 +137,5 @@ export default class RecipeInput extends Component {
     );
   }
 }
+
+export default RecipeInput;
