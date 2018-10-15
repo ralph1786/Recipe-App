@@ -7,46 +7,42 @@ import RecipeList from "./component/RecipeList/RecipeList";
 import Dialog from "material-ui/Dialog";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      recipes: [
-        {
-          id: 0,
-          title: "Ravioli",
-          instructions:
-            "Stuffed raviolis with beef, then close ravioli. Boil for 20 mins then add tomatoes sauce.",
-          ingredients: ["ravioli", "ground-beef", "tomatoes sauce", "cheese"],
-          img:
-            "https://cdn.pixabay.com/photo/2017/05/18/06/31/italian-2322684_1280.jpg"
-        },
-        {
-          id: 1,
-          title: "Paella",
-          instructions:
-            "Cook rice, then add Goya seasoning. After cooking for 20 mins add seafood ingredients.",
-          ingredients: ["rice", "shrimp", "Goya seasoning", "mussels", "squid"],
-          img:
-            "https://cdn.pixabay.com/photo/2014/07/21/23/04/paella-398968_1280.jpg"
-        },
-        {
-          id: 2,
-          title: "Flan",
-          instructions:
-            "Add flan mixture to pot. Then add sugar and condensed milk as well as regular milk. Then add caramel.",
-          ingredients: ["Boxed-Flan", "condensed milk", "caramel", "sugar"],
-          img:
-            "https://cdn.pixabay.com/photo/2015/04/16/16/51/flan-725903_1280.jpg"
-        }
-      ],
-      nextRecipeId: 3,
-      showForm: false
-    };
-    //This hides the form when app first loads.
-    this.handleSave = this.handleSave.bind(this);
-    this.onDelete = this.onDelete.bind(this);
-  }
-  handleSave(recipe) {
+  state = {
+    recipes: [
+      {
+        id: 0,
+        title: "Ravioli",
+        instructions:
+          "Stuffed raviolis with beef, then close ravioli. Boil for 20 mins then add tomatoes sauce.",
+        ingredients: ["ravioli", "ground-beef", "tomatoes sauce", "cheese"],
+        img:
+          "https://cdn.pixabay.com/photo/2017/05/18/06/31/italian-2322684_1280.jpg"
+      },
+      {
+        id: 1,
+        title: "Paella",
+        instructions:
+          "Cook rice, then add Goya seasoning. After cooking for 20 mins add seafood ingredients.",
+        ingredients: ["rice", "shrimp", "Goya seasoning", "mussels", "squid"],
+        img:
+          "https://cdn.pixabay.com/photo/2014/07/21/23/04/paella-398968_1280.jpg"
+      },
+      {
+        id: 2,
+        title: "Flan",
+        instructions:
+          "Add flan mixture to pot. Then add sugar and condensed milk as well as regular milk. Then add caramel.",
+        ingredients: ["Boxed-Flan", "condensed milk", "caramel", "sugar"],
+        img:
+          "https://cdn.pixabay.com/photo/2017/01/06/17/27/caramel-1958386__480.jpg"
+      }
+    ],
+    nextRecipeId: 3,
+    showForm: false
+  };
+
+  //This hides the form when app first loads.
+  handleSave = recipe => {
     this.setState(prevState => {
       const newRecipe = { ...recipe, id: this.state.nextRecipeId };
       return {
@@ -56,12 +52,12 @@ class App extends Component {
         showForm: false
       };
     });
-  }
+  };
 
-  onDelete(id) {
+  onDelete = id => {
     const recipes = this.state.recipes.filter(r => r.id !== id); //filter method will create a new array of recipes without including the recipe that was deleted.
     this.setState({ recipes });
-  }
+  };
 
   render() {
     const { showForm } = this.state;
