@@ -3,7 +3,7 @@ import Recipe from "../Recipe/Recipe";
 import PropTypes from "prop-types";
 import "./RecipeList.css";
 
-export default class RecipeList extends Component {
+class RecipeList extends Component {
   static propTypes = {
     recipes: PropTypes.arrayOf(PropTypes.object).isRequired,
     onDelete: PropTypes.func.isRequired
@@ -17,3 +17,5 @@ export default class RecipeList extends Component {
     return <div className="recipe-list">{recipes}</div>;
   }
 }
+
+export default RecipeList;
