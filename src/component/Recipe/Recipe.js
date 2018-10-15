@@ -17,7 +17,7 @@ class Recipe extends Component {
     const { title, img, instructions, id, onDelete } = this.props;
     //Since the ingredients is an array we use the map function.
     const ingredients = this.props.ingredients.map((ing, index) => (
-      // this will create a li for each ingredients.
+      // this will create a li for each ingredient.
       <li key={index}>{ing}</li>
     ));
     return (
@@ -27,13 +27,18 @@ class Recipe extends Component {
         </div>
         <div className="recipe-card-content">
           <h2 className="recipe-title">{title}</h2>
-          <h5>Ingredients:</h5>
+          <h4>Ingredients:</h4>
           <ul>{ingredients}</ul>
-          <h5>Instructions:</h5>
+          <h4>Instructions:</h4>
           <p>{instructions}</p>
-          <button type="button" onClick={() => onDelete(id)}>
-            Delete
-          </button>
+          <div className="button-edit">
+            <button type="button">Edit</button>
+          </div>
+          <div className="button-delete">
+            <button type="button" onClick={() => onDelete(id)}>
+              Delete
+            </button>
+          </div>
         </div>
       </div>
     );

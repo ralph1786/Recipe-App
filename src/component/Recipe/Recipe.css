@@ -1,29 +1,42 @@
-@import url("https://fonts.googleapis.com/css?family=Merienda|Roboto");
-:root {
-  --primary-color: #f2994a;
-}
+@import url("https://fonts.googleapis.com/css?family=Merienda|Roboto:400i:");
+
 .recipe-card {
   width: 31%;
   min-width: 240px;
   margin: 1%;
   border: 1px solid rgba(160, 160, 160, 0.3);
-  background: white;
+  background: #e3edf7;
   border-radius: 0 0 2px 2px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .recipe-card-content {
+  font-family: "Roboto", sans-serif;
   padding: 20px 5px;
-  font-family: "Roboto" cursive sans-serif;
+}
+
+.recipe-card-content > h4 {
+  padding-left: 15px;
 }
 
 .recipe-card-content button {
   outline: none;
 }
 
-.recipe-card-content button:hover {
+.recipe-card-content > div {
+  display: inline;
+  margin-left: 10px;
+}
+
+.button-edit button:hover {
   cursor: pointer;
-  background-color: var(--primary-color);
+  background-color: #f58f29;
+  color: white;
+}
+
+.button-delete button:hover {
+  cursor: pointer;
+  background-color: #e4572e;
   color: white;
 }
 
@@ -34,12 +47,13 @@
 
 .recipe-card img {
   width: 100%;
-  max-height: 250px;
+  min-height: 275px;
 }
 
 .recipe-title {
+  text-align: center;
   margin: 0;
-  font-family: "Merienda" cursive sans-serif;
+  font-family: "Merienda", cursive;
 }
 
 @media (min-width: 1000px) {
