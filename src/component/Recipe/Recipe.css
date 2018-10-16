@@ -24,8 +24,17 @@
 }
 
 .recipe-card-content > div {
-  display: inline;
-  margin-left: 10px;
+  display: flex;
+  margin-right: 10px;
+  float: right;
+}
+
+.recipe-card-content ul {
+  list-style-type: none;
+}
+
+.recipe-card-content li:nth-child(even) {
+  color: rgb(247, 131, 16);
 }
 
 .button-edit button:hover {
