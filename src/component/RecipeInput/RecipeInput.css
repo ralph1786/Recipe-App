@@ -53,6 +53,7 @@
   color: #e4572e;
   text-shadow: 0 1px 0 #fff;
   align-self: flex-end;
+  margin-bottom: 10px;
 }
 
 .recipe-form-container {
