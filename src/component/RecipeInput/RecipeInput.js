@@ -66,7 +66,7 @@ class RecipeInput extends Component {
         <form className="recipe-form" onSubmit={this.handleSubmit}>
           {/* This button is to close the form. */}
           <button type="button" className="close-button" onClick={onClose}>
-            X
+            Close
           </button>
           {/* Input for title of recipe. */}
           <div className="recipe-form-line">
