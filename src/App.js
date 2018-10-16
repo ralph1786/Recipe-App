@@ -75,16 +75,14 @@ class App extends Component {
                 onClose={() =>
                   this.setState(
                     // this closes form when X is clicked.
-                    {
-                      showForm: false
-                    }
+                    { showForm: false }
                   )
                 }
               />
             }
             modal={false}
             open={showForm}
-            onRequestClose={this.onClose}
+            // onClose={this.onClose}
           />
           <RecipeList onDelete={this.onDelete} recipes={this.state.recipes} />
         </div>
