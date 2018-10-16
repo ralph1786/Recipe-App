@@ -15,7 +15,7 @@ class Navbar extends Component {
       <div>
         <header>
           <h2>
-            <a>Recipe App</a>
+            <a>My Recipes</a>
           </h2>
           <nav>
             <li>
