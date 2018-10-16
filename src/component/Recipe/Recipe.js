@@ -18,7 +18,10 @@ class Recipe extends Component {
     //Since the ingredients is an array we use the map function.
     const ingredients = this.props.ingredients.map((ing, index) => (
       // this will create a li for each ingredient.
-      <li key={index}>{ing}</li>
+      <li key={index}>
+        <i className="fas fa-angle-right" style={{ marginRight: "10px" }} />
+        {ing}
+      </li>
     ));
     return (
       <div className="recipe-card">
